@@ -36,6 +36,10 @@
     work_authorization: "Yes",       // authorized to work in the US
     require_sponsorship: "No",        // adjust to your real situation
     years_experience: "N",
+    willing_to_relocate: "Yes",
+    earliest_start: "YYYY-MM-DD",
+    notice_period: "2 weeks",
+    how_heard: "Job Board",
     // Free-text fallbacks for "additional info" style boxes (left blank by default):
     summary: ""
   };
@@ -43,6 +47,10 @@
   // label/name keyword -> profile key
   const MAP = [
     [["first name", "firstname", "given name"], "first_name"],
+    [["willing to relocate", "open to relocation", "relocate"], "willing_to_relocate"],
+    [["earliest start", "start date", "when can you start", "available to start", "availability"], "earliest_start"],
+    [["notice period"], "notice_period"],
+    [["how did you hear", "how you heard", "referral source", "source"], "how_heard"],
     [["last name", "lastname", "family name", "surname"], "last_name"],
     [["full name", "your name", "name"], "full_name"],
     [["email"], "email"],
